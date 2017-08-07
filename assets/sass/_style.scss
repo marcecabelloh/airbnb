@@ -1,4 +1,10 @@
-body{
+*{
+	padding:0;
+	margin:0;
+}
+
+//seccion relacionada a index 1 portada
+.index1{
 	background-image:url(../img/simon-rae-254529.jpg);
 	@include imagen();
 }
@@ -14,3 +20,4 @@ body{
 	}
 }
 
+//termino seccion uno portada
