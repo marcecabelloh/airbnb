@@ -1,0 +1,16 @@
+body{
+	background-image:url(../img/simon-rae-254529.jpg);
+	@include imagen();
+}
+
+
+.index1{
+	.logo{
+	color:$color-blanco;
+		.titulo-logo{
+			color:$color-blanco;
+			font-weight:bolder;
+		}
+	}
+}
+
