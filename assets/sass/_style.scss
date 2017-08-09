@@ -108,6 +108,7 @@ nav {
 	h6{
 		font-size: 18px;
 		font-weight:$negrita;
+		margin-left: 30px;
 	}
 }
 
@@ -126,4 +127,207 @@ a.text-lighten-3{
 .btn-filtros{
 	padding:0 1rem; 
 }
+
+// estilos slider
+
+#wrapper{
+  max-width:100%;
+  padding:50px 75px 50px 45px;
+  position:relative;
+
+  	button:focus {
+  		outline:0 !important;
+  	}
+
+  	.left-controls{
+  
+  position:absolute;
+  top:0;
+  left:0;
+  width:4%;
+  height:1000px;
+  z-index:40;
+  background:#fff;
+  opacity:1;
+  cursor:pointer;
+  text-align:center;
+  justify-content: center;
+  justify-content:center;
+  display: webkit box;
+  display: webkit flex;
+  display: moz box;
+  display:ms flexbox;
+  display:flex;
+  color:white;
+
+	}
+
+	.fa-chevron-left-extra {
+  align-self:center;
+  position:relative;
+  height:auto;
+  top:-250px;
+  transform-origin: 55% 50%;
+  font-style:normal;
+  font-weight:400;
+  line-height:1;
+  font-variant:normal;
+  text-transform:none;
+  font-size:2.5vw;
+  transition:transform .1s ease-out 0s;
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  color:blue;
+  opacity:.1;
+	}
+
+	.fa-chevron-left-extra {
+  align-self:center;
+  position:relative;
+  height:auto;
+  top:-250px;
+  transform-origin: 55% 50%;
+  font-style:normal;
+  font-weight:400;
+  line-height:1;
+  font-variant:normal;
+  text-transform:none;
+  font-size:2.5vw;
+  transition:transform .1s ease-out 0s;
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  color:blue;
+  opacity:.1;
+	}
+
+	.right-controls{
+  position:absolute;
+  top:0;
+  right:0;
+  width:4%;
+  height:1000px;
+  z-index:40;
+  background:#fff;
+  opacity:1;
+  cursor:pointer;
+  text-align:center;
+  justify-content: center;
+  justify-content:center;
+  display: webkit box;
+  display: webkit flex;
+  display: moz box;
+  display:ms flexbox;
+  display:flex;
+  color:white;
+	}
+
+	.fa-chevron-right-extra {
+
+  align-self:center;
+  position:relative;
+  height:auto;
+  top:-250px;
+ transform-origin: 55% 50%;
+  font-style:normal;
+  font-weight:400;
+  line-height:1;
+  font-variant:normal;
+  text-transform:none;
+  font-size:2.5vw;
+  transition:transform .1s ease-out 0s;
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  color:blue;
+  opacity:.1;
+	}
+
+	.title{
+  color:#eee;
+	}
+
+.module-section{
+  max-width: 100%;
+  overflow: hidden;
+  overflow-x:scroll;
+
+  
+	}
+
+	ul{
+	width:200em;
+	list-style-type:none;
+	padding:50px 0 50px 0;
+
+	}
+
+	#content{
+  position:relative;
+}
+
+
+
+.card{
+  width: 13em;
+  background:#fff;
+  float:left;
+  margin-right:10px;
+  margin-bottom:50px;
+  cursor:pointer;
+  visibility:visible;
+  color: grey;
+  font-weight: lighter;
+
+  i{
+  	font-size: 15px;
+  	padding: 0;
+  	margin: 0;
+  	color: teal;
+  }
+
+  img{
+  	width:100%;
+  }
+  p{
+  	font-size: 14px;
+  	.precio{
+  		font-weight: 700;
+  	}
+  }
+
+  .evaluaciones{
+  	font-size: 10px;
+  }
+
+  
+}
+
+
+ .inside-top{
+  width:50%;
+  height:150px;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:100;
+
+}
+
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+
+
+
+
+}
+
 

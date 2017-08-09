@@ -22718,6 +22718,8 @@ $(function () {
 	});
 });
 
+  //plugin para marcar fecha de ingreso y salida
+
   $('.timepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15, // Creates a dropdown of 15 years to control year,
@@ -22751,3 +22753,19 @@ $(document).ready( function(){
 	});
 
 });
+
+  // codigo slider
+
+  $('#controlR').click(function() {
+      event.preventDefault();
+      $('#content').animate({
+        marginLeft: "-=400px"
+      }, "fast");
+   });
+
+ $('#controlL').click(function() {
+      event.preventDefault();
+      $('#content').animate({
+        marginLeft: "+=400px"
+      }, "fast");
+ });
