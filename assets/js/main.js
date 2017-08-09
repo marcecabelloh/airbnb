@@ -7,3 +7,28 @@
     close: 'Ok',
     closeOnSelect: false // Close upon selecting a date,
   });
+
+  
+
+$(document).ready( function(){
+
+	//funcion que permite esconder sección filtros con clase filtros. Index3
+	function esconder(){
+		$('.filtros').hide();
+	}
+
+	esconder();
+
+	$('.btn-filtros').click(function(){
+			//funcion que permite que al dar click al boton filtros muestre la sección filtros
+			$('.filtros').show();
+			
+		});
+
+	$('.btn-cancelar').click(function(){
+			//funcion que permite que al dar click al boton filtros muestre la sección filtros
+			$('.filtros').hide();
+		
+	});
+
+});
