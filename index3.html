@@ -9,7 +9,20 @@
     <link rel="shortcut icon" type="image/png" href="dist/img/airbnb-logo-belo-880x628.png.png">
 </head>
 <body> 
-  
+ <!-- comienzo navbar --> 
+ <nav>
+  <div class="nav-wrapper">
+    <img src="dist/img/airbnb-logo-belo-880x628.png" width="80">
+    <ul id="nav-mobile" class="right hide-on-med-and-down nav-principal">
+      <li><i class="material-icons left">search</i><input type="" name="" class="input-nav" placeholder="Buscar"></li>
+      <li><a href="#">Conviertete en alfitrión</a></li>
+      <li><a href="#">Ayuda</a></li>
+      <li><a href="#">Registrate</a></li>
+      <li><a href="#">Iniciar Sesión</a></li>
+    </ul>
+  </div>
+</nav>
+ <!-- cierre navbar -->
   <section>
     <div class="container">
       <div class="row">
@@ -155,7 +168,7 @@
 <!-- término sección imágenes llamadas desde json -->
 
 <!-- sección que se activa y despliega cuando se aprieta el botón filtros -->
-
+<section class="filtros">
 <div class="container">
   <div class="row">
     <div class="col xl12 l12 m12 s12">
@@ -325,22 +338,31 @@
         <a class="waves-effect waves-light btn red btn-aplicar">Aplicar Filtros</a>
       </div>      
     </div> 
-
-    <!-- pagination basic -->
-
-    <ul class="pagination">
-      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-      <li class="active"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">4</a></li>
-      <li class="waves-effect"><a href="#!">5</a></li>
-      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-    </ul>
-
     </div>
   </div>
 </div>
+</section>
+
+
+<section class="filtros">
+  <div class="container">
+    <div class="row">
+      <div class="col xl12 l12 m12 s12">
+      <!-- pagination basic -->
+        <ul class="pagination">
+          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+          <li class="active"><a href="#!">1</a></li>
+          <li class="waves-effect"><a href="#!">2</a></li>
+          <li class="waves-effect"><a href="#!">3</a></li>
+          <li class="waves-effect"><a href="#!">4</a></li>
+          <li class="waves-effect"><a href="#!">5</a></li>
+          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- sección footer -->
   <footer class="page-footer">
