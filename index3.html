@@ -8,8 +8,431 @@
 	<link rel="shortcut icon" type="image/png" href="dist/img/airbnb-logo-belo-880x628.png.png">
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
-
 <body> 
+ <!-- comienzo navbar --> 
+ <nav>
+  <div class="nav-wrapper">
+    <img src="dist/img/airbnb-logo-belo-880x628.png" width="80">
+    <ul id="nav-mobile" class="right hide-on-med-and-down nav-principal">
+      <li><i class="material-icons left">search</i><input type="" name="" class="input-nav" placeholder="Buscar"></li>
+      <li><a href="#">Conviertete en alfitrión</a></li>
+      <li><a href="#">Ayuda</a></li>
+      <li><a href="#">Registrate</a></li>
+      <li><a href="#">Iniciar Sesión</a></li>
+    </ul>
+  </div>
+</nav>
+ <!-- cierre navbar -->
+  <section>
+    <div class="container">
+      <div class="row">
+       <div class="col xl12 l12 m12 s12">
+      <div class="col xl6 l6 m6 s6">
+
+    <div class="row">
+      <div class="col xl3 l3 m3 s12">
+           <p>Fechas</p>
+        </div> 
+        <div class="col xl3 l3 m3 s12">
+           <input type="text" class="timepicker">
+        </div>  
+         <div class="col xl3 l3 m3 s12">
+           <input type="text" class="timepicker"> 
+         </div>
+         <div class="col xl3 l3 m3 s12">
+         <select class="browser-default">
+          <option value="" disabled selected>options</option>
+          <option value="1">1 huésped</option>
+          <option value="2">2 huéspedes</option>
+          <option value="3">3 huéspedes</option>
+          <option value="3">4 huéspedes</option>
+          <option value="3">5 huéspedes</option>
+          <option value="3">6 huéspedes</option>
+          <option value="3">7 huéspedes</option>
+          <option value="3">8 huéspedes</option>
+          <option value="3">9 huéspedes</option>
+          <option value="3">10 huéspedes</option>
+        </select>
+        </div>  
+      </div>    
+      <hr><br>
+       
+      <div class="row">
+      <div class="col xl3 l3 m3 s12">
+           <p>Tipos de Habitación <i class="fa fa-question-circle" aria-hidden="true"></i></p>
+        </div> 
+        <div class="col xl3 l3 m3 s12">
+         <form action="#">
+          <p>
+            <input type="checkbox" id="test5" />
+            <label for="test5"><i class="fa fa-home" aria-hidden="true"></i> Casa Entera</label>
+          </p>
+        </form>
+        </div>  
+         <div class="col xl3 l3 m3 s12">
+          <form action="#">
+            <p>
+              <input type="checkbox" id="test6" />
+              <label for="test6"><i class="fa fa-bed" aria-hidden="true"></i>
+ Habitación privada</label>
+            </p>
+          </form>
+         </div>
+         <div class="col xl3 l3 m3 s12">
+           <form action="#">
+            <p>
+              <input type="checkbox" id="test7" />
+              <label for="test7"><i class="fa fa-bed" aria-hidden="true"></i>
+ Habitación Compartida</label>
+            </p>
+          </form>
+        </div>    
+      </div> 
+      <hr><br>
+  
+
+      <div class="row">
+        <div class="col xl3 l3 m3 s12">
+          <p>Rango de Precios</p>
+        </div>
+        <div class="col xl9 l9 m9 s12">
+          <div>
+            <input type="text" id="range" value="" name="range" />
+        </div>
+        </div> 
+       </div>    
+      <hr><br>
+   
+
+      <div class="row">
+      <div class="col xl3 l3 m3 s12">
+        <p>Reserva inmediata</p>
+        </div>
+         <div class="col xl6 l6 m6 s12">
+          <p>Anuncios que no requieren que el anfitrión acepte la solicitud</p>
+        </div> 
+        <div class="col xl3 l3 m3 s12">
+         <!-- Switch -->
+         <div class="switch">
+          <label>
+            Off
+            <input type="checkbox">
+            <span class="lever"></span>
+            On
+          </label>
+        </div>
+        </div>
+       </div>  
+       <hr><br>  
+ 
+      <div class="row">
+      <div class="col xl3 l3 m3 s12">
+        <a class="waves-effect waves-light btn btn-filtros grey">Filtros</a>
+        </div>
+         <div class="col xl7 l7 m7 s12">
+          <p>Solo hay un 14% de alojamientos disponibles para estas fechas.
+          Te recomendamos que reserves un alojamiento lo antes posible</p>
+        </div> 
+        <div class="col xl2 l2 m2 s12">
+         <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+        </div>
+       </div>
+        <p class="grey-text">pueden aplicarse tarifas e impuestos adicionales</p>
+       <hr><br>
+       </div> 
+
+       <!-- sección mapa con geolocalización -->
+        <div class="container center">
+          <div class="row">
+            <div class="col xl6 l6 m6 s12">
+              <div id="mapa">hola acá va el mapa</div>
+            </div>
+          </div>
+        </div>
+    
+    </div> 
+  </div>
+</div>
+</section>
+
+<!-- seccion de imagenes llamadas desde Json -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col xl12 l12 m12 s12">
+        <div id="imagenes"> Acá van las imágenes</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- término sección imágenes llamadas desde json -->
+
+<!-- sección que se activa y despliega cuando se aprieta el botón filtros -->
+<section class="filtros">
+<div class="container">
+  <div class="row">
+    <div class="col xl12 l12 m12 s12">
+      <div class="row">
+      <div class="col xl3 l3 m3 s12">
+           <p>Tamaño</p>
+        </div> 
+        <div class="col xl3 l3 m3 s12">
+           <select class="browser-default">
+          <option value="" disabled selected>Habitaciones</option>
+          <option value="1">1 habitación</option>
+          <option value="2">2 habitaciones</option>
+          <option value="3">3 habitaciones</option>
+          <option value="3">4 habitaciones</option>
+          <option value="3">5 habitaciones</option>
+        </select>
+        </div>  
+         <div class="col xl3 l3 m3 s12">
+            <select class="browser-default">
+          <option value="" disabled selected>Baños</option>
+          <option value="1">1 baño</option>
+          <option value="2">2 baños</option>
+          <option value="3">3 baños</option>
+          <option value="3">4 baños</option>
+        </select>
+         </div>
+         <div class="col xl3 l3 m3 s12">
+         <select class="browser-default">
+          <option value="" disabled selected>Camas</option>
+          <option value="1">1 cama</option>
+          <option value="2">2 camas</option>
+          <option value="3">3 camas</option>
+          <option value="3">4 camas</option>
+          <option value="3">5 camas</option>
+        </select>
+        </div>  
+      </div>    
+      <hr><br>
+        <div class="row">
+      <div class="col xl3 l3 m3 s12">
+           <p>Servicios</p>
+        </div> 
+        <div class="col xl3 l3 m3 s12">
+         <form action="#">
+          <p>
+            <input type="checkbox" id="test8" />
+            <label for="test8"> Internet Inalámbrico (wifi)</label>
+          </p>
+        </form>
+        </div>  
+         <div class="col xl3 l3 m3 s12">
+          <form action="#">
+            <p>
+              <input type="checkbox" id="test9" />
+              <label for="test9">Tv</label>
+            </p>
+          </form>
+         </div>
+         <div class="col xl3 l3 m3 s12">
+           <form action="#">
+            <p>
+              <input type="checkbox" id="test10" />
+              <label for="test10">Cocina</label>
+            </p>
+          </form>
+        </div>    
+      </div> 
+      <hr><br>
+      
+        <div class="row">
+      <div class="col xl3 l3 m3 s12">
+           <p>Servicios</p>
+        </div> 
+        <div class="col xl3 l3 m3 s12">
+         <form action="#">
+          <p>
+            <input type="checkbox" id="test11" />
+            <label for="test11"> Edificio con Ascensor</label>
+          </p>
+        </form>
+        </div>  
+         <div class="col xl3 l3 m3 s12">
+          <form action="#">
+            <p>
+              <input type="checkbox" id="test12" />
+              <label for="test12">Gimnasio</label>
+            </p>
+          </form>
+         </div>
+         <div class="col xl3 l3 m3 s12">
+           <form action="#">
+            <p>
+              <input type="checkbox" id="test13" />
+              <label for="test13">Parking gratuito incluido</label>
+            </p>
+          </form>
+        </div>    
+      </div> 
+      <hr><br>
+        <div class="row">
+      <div class="col xl3 l3 m3 s12">
+           <p>Normas de la casa </p>
+        </div> 
+        <div class="col xl3 l3 m3 s12">
+         <form action="#">
+          <p>
+            <input type="checkbox" id="test14" />
+            <label for="test14"> Admite mascotas</label>
+          </p>
+        </form>
+        </div>  
+         <div class="col xl3 l3 m3 s12">
+          <form action="#">
+            <p>
+              <input type="checkbox" id="test15" />
+              <label for="test15">Apto para eventos</label>
+            </p>
+          </form>
+         </div>
+         <div class="col xl3 l3 m3 s12">
+           <form action="#">
+            <p>
+              <input type="checkbox" id="test16" />
+              <label for="test16">Apto para fumadores</label>
+            </p>
+          </form>
+        </div>    
+      </div> 
+      <hr><br>
+      
+        <div class="row">
+      <div class="col xl3 l3 m3 s12">
+           <p>Vecindarios</p>
+        </div> 
+        <div class="col xl3 l3 m3 s12">
+         <form action="#">
+          <p>
+            <input type="checkbox" id="test17" />
+            <label for="test17">Soma</label>
+          </p>
+        </form>
+        </div>  
+         <div class="col xl3 l3 m3 s12">
+          <form action="#">
+            <p>
+              <input type="checkbox" id="test18" />
+              <label for="test18">Mission District</label>
+            </p>
+          </form>
+         </div>
+         <div class="col xl3 l3 m3 s12">
+           <form action="#">
+            <p>
+              <input type="checkbox" id="test19" />
+              <label for="test19">Daly city</label>
+            </p>
+          </form>
+        </div>    
+      </div> 
+      <hr><br>
+
+      <div class="row">
+        <div class="col xl3 l3 m3 s12 right">
+         <a class="waves-effect waves-light btn grey btn-cancelar">Cancelar</a>
+       </div> 
+       <div class="col xl3 l3 m3 s12 right">
+        <a class="waves-effect waves-light btn red btn-aplicar">Aplicar Filtros</a>
+      </div>      
+    </div> 
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="filtros">
+  <div class="container">
+    <div class="row">
+      <div class="col xl12 l12 m12 s12">
+      <!-- pagination basic -->
+        <ul class="pagination">
+          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+          <li class="active"><a href="#!">1</a></li>
+          <li class="waves-effect"><a href="#!">2</a></li>
+          <li class="waves-effect"><a href="#!">3</a></li>
+          <li class="waves-effect"><a href="#!">4</a></li>
+          <li class="waves-effect"><a href="#!">5</a></li>
+          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- sección footer -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <hr>
+          <div class="col xl3 l3 m3 s12">
+           <select class="browser-default black-text">
+            <option value="" disabled selected>lenguage</option>
+            <option value="1">español</option>
+            <option value="2">inglés</option>
+            <option value="3">alemán</option>
+            <option value="3">Francés</option>
+            </select>
+
+            <div class="col xl3 l3 m3 s12">
+             <select class="browser-default black-text">
+              <option value="" disabled selected>Money</option>
+              <option value="1">USD</option>
+              <option value="2">CLP</option>
+              </select>
+            </div>  
+          </div>  
+        
+
+        <div class="col xl3 l3 s12">
+          <h5 class="black-text">Airbnb</h5>
+          <ul>
+            <li><a class=" text-lighten-3" href="#!">Acerca de</a></li>
+            <li><a class=" text-lighten-3" href="#!">Empleo</a></li>
+            <li><a class=" text-lighten-3" href="#!">Prensa</a></li>
+            <li><a class=" text-lighten-3" href="#!">Políticas</a></li>
+             <li><a class=" text-lighten-3" href="#!">Ayuda</a></li>
+          </ul>
+        </div>
+        <div class="col xl3 l3 s12">
+          <h5 class="black-text">Descubre Airbnb</h5>
+          <ul>
+            <li><a class=" text-lighten-3" href="#!">Confianza y seguridad</a></li>
+            <li><a class=" text-lighten-3" href="#!">Invitaciones</a></li>
+            <li><a class=" text-lighten-3" href="#!">Airbnb action</a></li>
+            <li><a class=" text-lighten-3" href="#!">Viajes de negocios</a></li>
+            <li><a class=" text-lighten-3" href="#!">Guías</a></li>
+          </ul>
+        </div>
+        <div class="col xl3 l3 s12">
+          <h5 class="black-text">Hospedar</h5>
+          <ul>
+            <li><a class=" text-lighten-3" href="#!">Razones para hospedar</a></li>
+            <li><a class=" text-lighten-3" href="#!">Hospitalidad</a></li>
+            <li><a class=" text-lighten-3" href="#!">Ser un anfitrión</a></li>
+            <li><a class=" text-lighten-3" href="#!">Responsable</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container black-text">
+        <img src="dist/img/airbnb-logo-blanco.png" width="20" class="logo-footer"> © Airbnb, Las Paulis Inc.
+
+        <a class=" text-lighten-4 right black-text" href="#!">Términos y privacidad &nbsp Mapa del Sitio &nbsp <i class="fa fa-facebook" aria-hidden="true"></i> &nbsp <i class="fa fa-twitter" aria-hidden="true"></i> &nbsp <i class="fa fa-instagram" aria-hidden="true"></i></a>
+       
+      </div>
+      </div> 
+    </div>
+  </footer>
+            
+
+
+
 
 	<!-- sección mapa con geolocalización -->
 	<div class="container center">
@@ -30,6 +453,7 @@
 <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA2nqSQ151PdZRSMubUe86uDZVlBujhqk&libraries=places&callback=initAutocomplete" async defer></script>
 <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>-->
+
 <script src="https://use.fontawesome.com/4154d90246.js" ></script>
 <script type="text/javascript" src="dist/js/script.js"></script>
 </body>
