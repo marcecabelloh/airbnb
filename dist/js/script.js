@@ -20262,6 +20262,7 @@ if (jQuery) {
     clear: 'Clear',
     close: 'Ok',
     closeOnSelect: false // Close upon selecting a date,
+
   });
 // Ion.RangeSlider
 // version 2.2.0 Build: 380
@@ -20273,7 +20274,7 @@ if (jQuery) {
 //
 // Released under MIT licence:
 // http://ionden.com/a/plugins/licence-en.html
-// =====================================================================================================================
+
 
 ;(function(factory) {
     if (typeof define === "function" && define.amd) {
@@ -20288,7 +20289,7 @@ if (jQuery) {
 } (function ($, document, window, navigator, undefined) {
     "use strict";
 
-    // =================================================================================================================
+ 
     // Service
 
     var plugin_count = 0;
@@ -20380,8 +20381,6 @@ if (jQuery) {
     }
 
 
-
-    // =================================================================================================================
     // Template
 
     var base_html =
@@ -20408,8 +20407,6 @@ if (jQuery) {
         '<span class="irs-disable-mask"></span>';
 
 
-
-    // =================================================================================================================
     // Core
 
     /**
@@ -21252,10 +21249,7 @@ if (jQuery) {
                 this.old_min_interval = null;
             }
         },
-
-
-
-        // =============================================================================================================
+      
         // Calculations
 
         /**
@@ -21581,8 +21575,6 @@ if (jQuery) {
         },
 
 
-
-        // =============================================================================================================
         // Drawings
 
         /**
@@ -21924,9 +21916,6 @@ if (jQuery) {
             }
         },
 
-
-
-        // =============================================================================================================
         // Callbacks
 
         callOnStart: function () {
@@ -21973,12 +21962,6 @@ if (jQuery) {
                 }
             }
         },
-
-
-
-
-        // =============================================================================================================
-        // Service methods
 
         toggleInput: function () {
             this.$cache.input.toggleClass("irs-hidden-input");
@@ -22425,9 +22408,6 @@ if (jQuery) {
         },
 
 
-        // =============================================================================================================
-        // Grid
-
         appendGrid: function () {
             if (!this.options.grid) {
                 return;
@@ -22620,10 +22600,6 @@ if (jQuery) {
         },
 
 
-
-        // =============================================================================================================
-        // Public methods
-
         update: function (options) {
             if (!this.input) {
                 return;
@@ -22678,15 +22654,6 @@ if (jQuery) {
     };
 
 
-
-    // =================================================================================================================
-    // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
-    // http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
-
-    // requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
-
-    // MIT license
-
     (function() {
         var lastTime = 0;
         var vendors = ['ms', 'moz', 'webkit', 'o'];
@@ -22726,3 +22693,6 @@ $(function () {
 		prefix: "$ / "
 	});
 });
+
+  });
+
